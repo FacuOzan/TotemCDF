@@ -9,6 +9,13 @@ var ticketR = 1;
 
 
 
+
+
+
+
+
+
+
 function askThisQuestionRecursively() {
   rl.write('Ticket de Mesa de Entrada: Presione 1 \n');
   rl.write('Ticket de Laboratorio Presione 2 \n');
@@ -51,5 +58,6 @@ function askThisQuestionRecursively() {
 
   });
   askThisQuestionRecursively();
+ 
 }
 

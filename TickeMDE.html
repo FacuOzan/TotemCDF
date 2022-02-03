@@ -15,7 +15,7 @@
                 <div class="card-body">
                   <h5 class="card-title"style="font-size:20px; padding-bottom: 10px;"><img src="../Proyecto TOTEM/Img/admission.png" alt="Logotipo Mesa De Entrada" width="50px" height="50px"> Mesa De Entrada</h5>
                   <p class="card-text" style="font-size: 19px; text-align: center;">Si su receta <mark style="background-color: aqua;">NO</mark> se imprime, <br><b> vuelva a intentar</b></p>
-                  <a href="../Proyecto TOTEM/MDE - IMPRIME.html" class="btn btn-primary" style="background-color: #38D9BC; border-radius: 10px; margin-left: 55px; padding: 10px 20px 10px 20px; font-size: 18px; color: rgb(55, 54, 54);"><img src="../Proyecto TOTEM/Img/impresora.png" alt="Icono impresora" width="20px"; height="20px" style="margin-bottom: 3px;"> Imprimir</a>
+                  <a href="../Proyecto TOTEM/MDE - IMPRIME.html"><button onclick="askThisQuestionRecursively(1);" class="btn btn-primary" style="background-color: #38D9BC; border-radius: 10px; margin-left: 55px; padding: 10px 20px 10px 20px; font-size: 18px; color: rgb(55, 54, 54);"><img src="../Proyecto TOTEM/Img/impresora.png" alt="Icono impresora" width="20px"; height="20px" style="margin-bottom: 3px;"> Imprimir </button></a>
                 </div>
               </div>
             </div>
@@ -27,7 +27,7 @@
                      <div class="row">
                        <div class="col-md-12">
                         <a href="index.html" rel="Botonvolver" style="text-decoration: none; ">
-                           <button type="button" class="btn btn-primary" style="margin: auto;">
+                           <button  type="button" class="btn btn-primary" style="margin: auto;">
                             <img src="../Proyecto TOTEM/Img/atras.png" alt="Logo Atras" width="20px" height="20px" style="margin-bottom: 3px; "> 
                             Volver
                           </button>
@@ -36,11 +36,14 @@
                      </div>
                    </div>
  
-
                  
+                   
 
                  </footer>   
             
-          
+          <script> document.getElementById("ticketMDE").addEventListener("click",askThisQuestionRecursively(1));
+            function myfunction(){
+              document.getElementById("ticket").innerHTML="Su número"
+            }</script>
     </body>
 </html>
